@@ -8,9 +8,9 @@ RSpec.describe "Exchange Currency Process", :type => :feature do
       select('USD', from: 'currency_destination')
       fill_in 'quantity', with: '10'
     end
-    # click_button 'CONVERTER'
+     find('#inverter_moeda').click
 
     # save_and_open_page
-    expect(page).to have_content("value")
+    #expect(page).to have_content("value")
   end
 end
